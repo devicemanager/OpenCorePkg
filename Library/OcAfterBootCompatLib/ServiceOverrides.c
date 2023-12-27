@@ -217,7 +217,7 @@ ProtectMemoryRegions (
   // Some types of firmware may leave MMIO regions as reserved memory with runtime flag,
   // which will not get mapped by macOS kernel. This will cause boot failures due
   // to such firmware accessing these regions at runtime for NVRAM support.
-  // REF: https://github.com/acidanthera/bugtracker/issues/791#issuecomment-608959387
+  // REF: https://github.com/devicemanager/bugtracker/issues/791#issuecomment-608959387
   //
 
   Desc = MemoryMap;
@@ -621,7 +621,7 @@ OcGetMemoryMap (
   if (BootCompat->Settings.SyncRuntimePermissions && (BootCompat->ServiceState.FwRuntime != NULL)) {
     //
     // Some types of firmware mark runtime drivers loaded after EndOfDxe as EfiRuntimeServicesData:
-    // REF: https://github.com/acidanthera/bugtracker/issues/791#issuecomment-607935508
+    // REF: https://github.com/devicemanager/bugtracker/issues/791#issuecomment-607935508
     //
     Status2 = BootCompat->ServiceState.FwRuntime->GetExecArea (&Address, &Pages);
 

@@ -803,7 +803,7 @@ GuiFlushScreen (
   // current draw order; but a better full fix would be to specify explicit ordering
   // requirements with each draw request, which would allow the best blit order to get this
   // same improvement to be calculated independently of the order in which requests are added.
-  // REF: https://github.com/acidanthera/bugtracker/issues/1852
+  // REF: https://github.com/devicemanager/bugtracker/issues/1852
   //
   for (Index = 0; Index < mNumValidDrawReqs; ++Index) {
     ReverseIndex = mNumValidDrawReqs - Index - 1;

@@ -18,7 +18,7 @@ informational purposes. You have no right to modify logo.
 The use of this logo in your own projects which
 are related to OpenCore is also permitted free of charge, yet requires
 OpenCore maintainer approval. Please
-[contact us](https://github.com/acidanthera/bugtracker/issues/new)
+[contact us](https://github.com/devicemanager/bugtracker/issues/new)
 for more details.
 
 We would like to express our deep gratitude to

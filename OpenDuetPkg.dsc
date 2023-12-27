@@ -251,7 +251,7 @@
   gEfiMdePkgTokenSpaceGuid.PcdUgaConsumeSupport|FALSE
 
 [PcdsFixedAtBuild]
-  gEfiMdeModulePkgTokenSpaceGuid.PcdFirmwareVendor|L"Acidanthera"
+  gEfiMdeModulePkgTokenSpaceGuid.PcdFirmwareVendor|L"devicemanager"
   gEfiMdeModulePkgTokenSpaceGuid.PcdFirmwareRevision|0x00010010
   gEfiMdeModulePkgTokenSpaceGuid.PcdEmuVariableNvModeEnable|TRUE
   gEfiMdeModulePkgTokenSpaceGuid.PcdMaxVariableSize|0x10000

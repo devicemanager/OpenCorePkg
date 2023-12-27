@@ -196,7 +196,7 @@ OcShowMenuByOc (
   //  - Each screen clear on a slow GOP (such as direct GOP rendering) is a noticeable slowdown
   // However:
   //  - Windows without ACPI->Quirks->ResetLogoStatus does not clear any pre-existing graphics
-  //    - Ref: https://github.com/acidanthera/bugtracker/issues/2231
+  //    - Ref: https://github.com/devicemanager/bugtracker/issues/2231
   //  - Peforming this screen clear gives a sense of progress (i.e. something happens immediately
   //    rather than nothing) if the selected entry will be very slow to start (e.g. Recovery, in
   ///   some circumstances)

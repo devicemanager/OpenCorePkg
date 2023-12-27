@@ -1677,7 +1677,7 @@ InternalLoadBootEntry (
         //
         // Some fragile firmware fail to properly set LoadedImage file source
         // fields to our custom device path, so we fix it up here.
-        // REF: https://github.com/acidanthera/bugtracker/issues/712
+        // REF: https://github.com/devicemanager/bugtracker/issues/712
         //
         if ((LoadedImage->DeviceHandle == NULL) && (StorageHandle != NULL)) {
           if (LoadedImage->FilePath != NULL) {

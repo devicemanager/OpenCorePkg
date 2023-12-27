@@ -28,7 +28,7 @@ WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
 //
 // Variable used for OpenCore request to redirect NVRAM Boot variable write.
 // Boot Services only.
-// See: https://github.com/acidanthera/bugtracker/issues/308.
+// See: https://github.com/devicemanager/bugtracker/issues/308.
 //
 #define OC_BOOT_REDIRECT_VARIABLE_NAME  L"boot-redirect"
 

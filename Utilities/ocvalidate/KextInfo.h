@@ -29,7 +29,7 @@ typedef struct KEXT_PRECEDENCE_ {
 } KEXT_PRECEDENCE;
 
 /**
-  Known information of kexts. Mainly those from Acidanthera.
+  Known information of kexts. Mainly those from devicemanager.
 **/
 typedef struct KEXT_INFO_ {
   CONST CHAR8    *KextBundlePath;

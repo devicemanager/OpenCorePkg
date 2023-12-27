@@ -115,7 +115,7 @@ PreserveGrubShimHooks (
 }
 
 //
-// REF: https://github.com/acidanthera/bugtracker/issues/1874
+// REF: https://github.com/devicemanager/bugtracker/issues/1874
 //
 STATIC
 VOID

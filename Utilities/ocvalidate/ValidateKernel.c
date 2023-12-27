@@ -316,7 +316,7 @@ CheckKernelAdd (
   }
 
   //
-  // Special checks for kext precedence from Acidanthera.
+  // Special checks for kext precedence from devicemanager.
   //
   for (IndexKextPrecedence = 0; IndexKextPrecedence < mKextPrecedenceSize; ++IndexKextPrecedence) {
     HasParent = FALSE;

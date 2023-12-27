@@ -30,7 +30,7 @@ WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
 // Note, never use Apple or similar on non-Apple instances (e.g. VMs).
 // This breaks many internal and external OS mechanisms.
 //
-#define OC_SMBIOS_VENDOR_NAME  "Acidanthera"
+#define OC_SMBIOS_VENDOR_NAME  "devicemanager"
 
 typedef struct OC_SMBIOS_MEMORY_DEVICE_DATA_ {
   //

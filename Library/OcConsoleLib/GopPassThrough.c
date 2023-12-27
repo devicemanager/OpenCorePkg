@@ -133,7 +133,7 @@ OcProvideGopPassThrough (
   //
   // We should not proxy UGA when there is no AppleFramebuffer,
   // but on systems where there is nothing, it is the only option.
-  // REF: https://github.com/acidanthera/bugtracker/issues/1498
+  // REF: https://github.com/devicemanager/bugtracker/issues/1498
   //
   Status = gBS->LocateProtocol (
                   &gAppleFramebufferInfoProtocolGuid,

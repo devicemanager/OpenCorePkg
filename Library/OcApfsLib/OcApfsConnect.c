@@ -369,7 +369,7 @@ ApfsStartDriver (
     // Unblock handles as some types of firmware, such as that on the HP EliteBook 840 G2,
     // may automatically lock all volumes without filesystem drivers upon
     // any attempt to connect them.
-    // REF: https://github.com/acidanthera/bugtracker/issues/1128
+    // REF: https://github.com/devicemanager/bugtracker/issues/1128
     //
     OcDisconnectDriversOnHandle (PrivateData->LocationInfo.ControllerHandle);
   }
@@ -379,7 +379,7 @@ ApfsStartDriver (
     // Connect all devices when implicitly requested. This is a workaround
     // for some older HP laptops, which for some reason fail to connect by both
     // drive and partition handles.
-    // REF: https://github.com/acidanthera/bugtracker/issues/960
+    // REF: https://github.com/devicemanager/bugtracker/issues/960
     //
     OcConnectDrivers ();
   } else {

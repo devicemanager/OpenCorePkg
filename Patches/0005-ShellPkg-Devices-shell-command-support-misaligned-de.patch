@@ -1,5 +1,5 @@
 From 835e353002ab6e5606c3a9f73d6e2f00f3c2a259 Mon Sep 17 00:00:00 2001
-From: ocbuild <ocbuild@acidanthera.local>
+From: ocbuild <ocbuild@devicemanager.local>
 Date: Wed, 31 Mar 2021 07:11:46 +0100
 Subject: [PATCH] ShellPkg: Devices shell command support misaligned device
  names found in some Apple firmware

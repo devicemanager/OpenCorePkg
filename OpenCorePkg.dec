@@ -21,7 +21,7 @@
 
 [Includes]
   Include/AMI
-  Include/Acidanthera
+  Include/devicemanager
   Include/Apple
   Include/Generic
   Include/Grub2
@@ -32,7 +32,7 @@
 
 [Includes.AArch64]
   # Include/AMI/AArch64
-  # Include/Acidanthera/AArch64
+  # Include/devicemanager/AArch64
   Include/Apple/AArch64
   # Include/Generic/AArch64
   # Include/Intel/AArch64
@@ -42,7 +42,7 @@
 
 [Includes.Arm]
   # Include/AMI/Arm
-  # Include/Acidanthera/Arm
+  # Include/devicemanager/Arm
   Include/Apple/Arm
   # Include/Generic/Arm
   # Include/Intel/Arm
@@ -52,7 +52,7 @@
 
 [Includes.Ebc]
   # Include/AMI/Ebc
-  # Include/Acidanthera/Ebc
+  # Include/devicemanager/Ebc
   Include/Apple/Ebc
   # Include/Generic/Ebc
   # Include/Intel/Ebc
@@ -62,7 +62,7 @@
 
 [Includes.Ia32]
   # Include/AMI/Ia32
-  # Include/Acidanthera/Ia32
+  # Include/devicemanager/Ia32
   Include/Apple/Ia32
   # Include/Generic/Ia32
   # Include/Intel/Ia32
@@ -72,7 +72,7 @@
 
 [Includes.X64]
   # Include/AMI/X64
-  # Include/Acidanthera/X64
+  # Include/devicemanager/X64
   Include/Apple/X64
   # Include/Generic/X64
   # Include/Intel/X64
@@ -81,25 +81,25 @@
   # Include/VMware/X64
 
 [Guids]
-  ## Include/Acidanthera/Guid/OcVariable.h
+  ## Include/devicemanager/Guid/OcVariable.h
   gOcVendorVariableGuid                      = { 0x4D1FDA02, 0x38C7, 0x4A6A, { 0x9C, 0xC6, 0x4B, 0xCC, 0xA8, 0xB3, 0x01, 0x02 }}
 
-  ## Include/Acidanthera/Guid/OcVariable.h
+  ## Include/devicemanager/Guid/OcVariable.h
   gOcReadOnlyVariableGuid                    = { 0xE09B9297, 0x7928, 0x4440, { 0x9A, 0xAB, 0xD1, 0xF8, 0x53, 0x6F, 0xBF, 0x0A }}
 
-  ## Include/Acidanthera/Guid/OcVariable.h
+  ## Include/devicemanager/Guid/OcVariable.h
   gOcWriteOnlyVariableGuid                   = { 0xF0B9AF8F, 0x2222, 0x4840, { 0x8A, 0x37, 0xEC, 0xF7, 0xCC, 0x8C, 0x12, 0xE1 }}
 
   ## OcSupport package token space guid
   gOpenCorePkgTokenSpaceGuid                 = { 0x38D40CB0, 0x7E37, 0x4CAA, { 0x91, 0xD3, 0x00, 0x47, 0x70, 0xA8, 0x73, 0x77 }}
 
-  ## Include/Acidanthera/Guid/OcSmBios.h
+  ## Include/devicemanager/Guid/OcSmBios.h
   gOcCustomSmbiosTableGuid                   = { 0xEB9D2D35, 0x2D88, 0x11D3, { 0x9A, 0x16, 0x00, 0x90, 0x27, 0x3F, 0xC1, 0x4D }}
 
-  ## Include/Acidanthera/Guid/OcSmBios.h
+  ## Include/devicemanager/Guid/OcSmBios.h
   gOcCustomSmbios3TableGuid                  = { 0xF2FD1545, 0x9794, 0x4A2C, { 0x99, 0x2E, 0xE5, 0xBB, 0xCF, 0x20, 0xE3, 0x94 }}
 
-  ## Include/Acidanthera/Protocol/HdaIo.h
+  ## Include/devicemanager/Protocol/HdaIo.h
   gEfiHdaIoDevicePathGuid                    = { 0xA9003FEB, 0xD806, 0x41DB, { 0xA4, 0x91, 0x54, 0x05, 0xFE, 0xEF, 0x46, 0xC3 }}
 
   ## Include/Apple/Guid/AppleApfsInfo.h
@@ -475,46 +475,46 @@
   gShimLockGuid                              = { 0x605DAB50, 0xE046, 0x4300, { 0xAB, 0xB6, 0x3D, 0xD8, 0x10, 0xDD, 0x8B, 0x23 }}
 
 [Protocols]
-  ## Include/Acidanthera/Protocol/AudioDecode.h
+  ## Include/devicemanager/Protocol/AudioDecode.h
   gEfiAudioDecodeProtocolGuid                = { 0xAF3F6C23, 0x8132, 0x4880, { 0xB3, 0x29, 0x04, 0x8D, 0xF7, 0x1D, 0xD8, 0x6A }}
 
-  ## Include/Acidanthera/Protocol/AudioIo.h
+  ## Include/devicemanager/Protocol/AudioIo.h
   gEfiAudioIoProtocolGuid                    = { 0x22266891, 0x2032, 0x4BAE, { 0xB7, 0xB5, 0x43, 0x74, 0xE7, 0x32, 0x09, 0x49 }}
 
-  ## Include/Acidanthera/Protocol/HdaCodecInfo.h
+  ## Include/devicemanager/Protocol/HdaCodecInfo.h
   gEfiHdaCodecInfoProtocolGuid               = { 0x6C9CDDE1, 0xE8A5, 0x43E5, { 0xBE, 0x88, 0xDA, 0x15, 0xBC, 0x1C, 0x02, 0x50 }}
 
-  ## Include/Acidanthera/Protocol/HdaControllerInfo.h
+  ## Include/devicemanager/Protocol/HdaControllerInfo.h
   gEfiHdaControllerInfoProtocolGuid          = { 0xE5FC2CAF, 0x0291, 0x46F2, { 0x87, 0xF8, 0x10, 0xC7, 0x58, 0x72, 0x58, 0x04 }}
 
-  ## Include/Acidanthera/Protocol/HdaIo.h
+  ## Include/devicemanager/Protocol/HdaIo.h
   gEfiHdaIoProtocolGuid                      = { 0xA090D7F9, 0xB50A, 0x4EA1, { 0xBD, 0xE9, 0x1A, 0xA5, 0xE9, 0x81, 0x2F, 0x45 }}
 
-  ## Include/Acidanthera/Protocol/OcAudio.h
+  ## Include/devicemanager/Protocol/OcAudio.h
   gOcAudioProtocolGuid                       = { 0x4B228577, 0x6274, 0x4A48, { 0x82, 0xAE, 0x07, 0x13, 0xA1, 0x17, 0x19, 0x87 }}
 
-  ## Include/Acidanthera/Protocol/OcBootstrap.h
+  ## Include/devicemanager/Protocol/OcBootstrap.h
   gOcBootstrapProtocolGuid                   = { 0xBA1EB455, 0xB182, 0x4F14, { 0x85, 0x21, 0xE4, 0x22, 0xC3, 0x25, 0xDE, 0xF6 }}
 
-  ## Include/Acidanthera/Protocol/OcInterface.h
+  ## Include/devicemanager/Protocol/OcInterface.h
   gOcInterfaceProtocolGuid                   = { 0x53027CDF, 0x3A89, 0x4255, { 0xAE, 0x29, 0xD6, 0x66, 0x6E, 0xFE, 0x99, 0xEF }}
 
-  ## Include/Acidanthera/Protocol/OcLog.h
+  ## Include/devicemanager/Protocol/OcLog.h
   gOcLogProtocolGuid                         = { 0xDBB6008F, 0x89E4, 0x4272, { 0x98, 0x81, 0xCE, 0x3A, 0xFD, 0x97, 0x24, 0xD0 }}
 
-  ## Include/Acidanthera/Protocol/OcAfterBootCompat.h
+  ## Include/devicemanager/Protocol/OcAfterBootCompat.h
   gOcAfterBootCompatProtocolGuid             = { 0xC7CBA84E, 0xCC77, 0x461D, { 0x9E, 0x3C, 0x6B, 0xE0, 0xCB, 0x79, 0xA7, 0xC1 }}
 
-  ## Include/Acidanthera/Protocol/OcFirmwareRuntime.h
+  ## Include/devicemanager/Protocol/OcFirmwareRuntime.h
   gOcFirmwareRuntimeProtocolGuid             = { 0x570332E4, 0xFC50, 0x4B21, { 0xAB, 0xE8, 0xAE, 0x72, 0xF0, 0x5B, 0x4F, 0xF7 }}
 
-  ## Include/Acidanthera/Protocol/OcForceResolution.h
+  ## Include/devicemanager/Protocol/OcForceResolution.h
   gOcForceResolutionProtocolGuid             = { 0xBC7EC589, 0x2390, 0x4DA3, { 0x80, 0x25, 0x77, 0xDA, 0xD3, 0x4F, 0x36, 0x09 }}
 
-  ## Include/Acidanthera/Protocol/OcBootEntry.h
+  ## Include/devicemanager/Protocol/OcBootEntry.h
   gOcBootEntryProtocolGuid                   = { 0x8604716E, 0xADD4, 0x45B4, { 0x84, 0x95, 0x08, 0xE3, 0x6D, 0x49, 0x7F, 0x4F }}
 
-  ## Include/Acidanthera/Protocol/OcVariableRuntime.h
+  ## Include/devicemanager/Protocol/OcVariableRuntime.h
   gOcVariableRuntimeProtocolGuid             = { 0x3DBA852A, 0x2645, 0x4184, { 0x95, 0x71, 0xE6, 0x0C, 0x2B, 0xFD, 0x72, 0x4C }}
 
   ##  Include/AMI/Protocol/AmiPointer.h
@@ -788,190 +788,190 @@
 
 [LibraryClasses]
   ##  @libraryclass
-  OcAcpiLib|Include/Acidanthera/Library/OcAcpiLib.h
+  OcAcpiLib|Include/devicemanager/Library/OcAcpiLib.h
 
   ##  @libraryclass
-  OcAfterBootCompatLib|Include/Acidanthera/Library/OcAfterBootCompatLib.h
+  OcAfterBootCompatLib|Include/devicemanager/Library/OcAfterBootCompatLib.h
 
   ##  @libraryclass
-  OcApfsLib|Include/Acidanthera/Library/OcApfsLib.h
+  OcApfsLib|Include/devicemanager/Library/OcApfsLib.h
 
   ##  @libraryclass
-  OcAppleBootPolicyLib|Include/Acidanthera/Library/OcAppleBootPolicyLib.h
+  OcAppleBootPolicyLib|Include/devicemanager/Library/OcAppleBootPolicyLib.h
 
   ##  @libraryclass
-  OcAppleChunklistLib|Include/Acidanthera/Library/OcAppleChunklistLib.h
+  OcAppleChunklistLib|Include/devicemanager/Library/OcAppleChunklistLib.h
 
   ##  @libraryclass
-  OcAppleDiskImageLib|Include/Acidanthera/Library/OcAppleDiskImageLib.h
+  OcAppleDiskImageLib|Include/devicemanager/Library/OcAppleDiskImageLib.h
 
   ##  @libraryclass
-  OcAppleEventLib|Include/Acidanthera/Library/OcAppleEventLib.h
+  OcAppleEventLib|Include/devicemanager/Library/OcAppleEventLib.h
 
   ##  @libraryclass
-  OcAppleImageConversionLib|Include/Acidanthera/Library/OcAppleImageConversionLib.h
+  OcAppleImageConversionLib|Include/devicemanager/Library/OcAppleImageConversionLib.h
 
   ##  @libraryclass
-  OcAppleImg4Lib|Include/Acidanthera/Library/OcAppleImg4Lib.h
+  OcAppleImg4Lib|Include/devicemanager/Library/OcAppleImg4Lib.h
 
   ##  @libraryclass
-  OcAppleKernelLib|Include/Acidanthera/Library/OcAppleKernelLib.h
+  OcAppleKernelLib|Include/devicemanager/Library/OcAppleKernelLib.h
 
   ##  @libraryclass
-  OcAppleKeyMapLib|Include/Acidanthera/Library/OcAppleKeyMapLib.h
+  OcAppleKeyMapLib|Include/devicemanager/Library/OcAppleKeyMapLib.h
 
   ##  @libraryclass
-  OcAppleKeysLib|Include/Acidanthera/Library/OcAppleKeysLib.h
+  OcAppleKeysLib|Include/devicemanager/Library/OcAppleKeysLib.h
 
   ##  @libraryclass
-  OcAppleRamDiskLib|Include/Acidanthera/Library/OcAppleRamDiskLib.h
+  OcAppleRamDiskLib|Include/devicemanager/Library/OcAppleRamDiskLib.h
 
   ##  @libraryclass
-  OcAppleSecureBootLib|Include/Acidanthera/Library/OcAppleSecureBootLib.h
+  OcAppleSecureBootLib|Include/devicemanager/Library/OcAppleSecureBootLib.h
 
   ##  @libraryclass
-  OcAppleUserInterfaceThemeLib|Include/Acidanthera/Library/OcAppleUserInterfaceThemeLib.h
+  OcAppleUserInterfaceThemeLib|Include/devicemanager/Library/OcAppleUserInterfaceThemeLib.h
 
   ##  @libraryclass
-  OcAudioLib|Include/Acidanthera/Library/OcAudioLib.h
+  OcAudioLib|Include/devicemanager/Library/OcAudioLib.h
 
   ##  @libraryclass
-  OcBlitLib|Include/Acidanthera/Library/OcBlitLib.h
+  OcBlitLib|Include/devicemanager/Library/OcBlitLib.h
 
   ##  @libraryclass
-  OcBootManagementLib|Include/Acidanthera/Library/OcBootManagementLib.h
+  OcBootManagementLib|Include/devicemanager/Library/OcBootManagementLib.h
 
   ##  @libraryclass
-  OcBootServicesTableLib|Include/Acidanthera/Library/OcBootServicesTableLib.h
+  OcBootServicesTableLib|Include/devicemanager/Library/OcBootServicesTableLib.h
 
   ##  @libraryclass
-  OcCompressionLib|Include/Acidanthera/Library/OcCompressionLib.h
+  OcCompressionLib|Include/devicemanager/Library/OcCompressionLib.h
 
   ##  @libraryclass
-  OcConfigurationLib|Include/Acidanthera/Library/OcConfigurationLib.h
+  OcConfigurationLib|Include/devicemanager/Library/OcConfigurationLib.h
 
   ##  @libraryclass
-  OcConsoleLib|Include/Acidanthera/Library/OcConsoleLib.h
+  OcConsoleLib|Include/devicemanager/Library/OcConsoleLib.h
 
   ##  @libraryclass
-  OcCpuLib|Include/Acidanthera/Library/OcCpuLib.h
+  OcCpuLib|Include/devicemanager/Library/OcCpuLib.h
 
   ##  @libraryclass
-  OcCryptoLib|Include/Acidanthera/Library/OcCryptoLib.h
+  OcCryptoLib|Include/devicemanager/Library/OcCryptoLib.h
 
   ##  @libraryclass
-  OcDataHubLib|Include/Acidanthera/Library/OcDataHubLib.h
+  OcDataHubLib|Include/devicemanager/Library/OcDataHubLib.h
 
   ##  @libraryclass
-  OcDebugLogLib|Include/Acidanthera/Library/OcDebugLogLib.h
+  OcDebugLogLib|Include/devicemanager/Library/OcDebugLogLib.h
 
   ##  @libraryclass
-  OcDeviceMiscLib|Include/Acidanthera/Library/OcDeviceMiscLib.h
+  OcDeviceMiscLib|Include/devicemanager/Library/OcDeviceMiscLib.h
 
   ##  @libraryclass
-  OcDevicePathLib|Include/Acidanthera/Library/OcDevicePathLib.h
+  OcDevicePathLib|Include/devicemanager/Library/OcDevicePathLib.h
 
   ##  @libraryclass
-  OcDevicePropertyLib|Include/Acidanthera/Library/OcDevicePropertyLib.h
+  OcDevicePropertyLib|Include/devicemanager/Library/OcDevicePropertyLib.h
 
   ##  @libraryclass
-  OcDeviceTreeLib|Include/Acidanthera/Library/OcDeviceTreeLib.h
+  OcDeviceTreeLib|Include/devicemanager/Library/OcDeviceTreeLib.h
 
   ##  @libraryclass
-  OcFileLib|Include/Acidanthera/Library/OcFileLib.h
+  OcFileLib|Include/devicemanager/Library/OcFileLib.h
 
   ##  @libraryclass
-  OcFirmwarePasswordLib|Include/Acidanthera/Library/OcFirmwarePasswordLib.h
+  OcFirmwarePasswordLib|Include/devicemanager/Library/OcFirmwarePasswordLib.h
 
   ##  @libraryclass
-  OcFirmwareVolumeLib|Include/Acidanthera/Library/OcFirmwareVolumeLib.h
+  OcFirmwareVolumeLib|Include/devicemanager/Library/OcFirmwareVolumeLib.h
 
   ##  @libraryclass
-  OcFlexArrayLib|Include/Acidanthera/Library/OcFlexArrayLib.h
+  OcFlexArrayLib|Include/devicemanager/Library/OcFlexArrayLib.h
 
   ##  @libraryclass
-  OcHashServicesLib|Include/Acidanthera/Library/OcHashServicesLib.h
+  OcHashServicesLib|Include/devicemanager/Library/OcHashServicesLib.h
 
   ##  @libraryclass
-  OcHdaDevicesLib|Include/Acidanthera/Library/OcHdaDevicesLib.h
+  OcHdaDevicesLib|Include/devicemanager/Library/OcHdaDevicesLib.h
 
   ##  @libraryclass
-  OcHeciLib|Include/Acidanthera/Library/OcHeciLib.h
+  OcHeciLib|Include/devicemanager/Library/OcHeciLib.h
 
   ##  @libraryclass
-  OcInputLib|Include/Acidanthera/Library/OcInputLib.h
+  OcInputLib|Include/devicemanager/Library/OcInputLib.h
 
   ##  @libraryclass
-  OcLegacyThunkLib|Include/Acidanthera/Library/OcLegacyThunkLib.h
+  OcLegacyThunkLib|Include/devicemanager/Library/OcLegacyThunkLib.h
 
   ##  @libraryclass
-  OcLogAggregatorLib|Include/Acidanthera/Library/OcLogAggregatorLib.h
+  OcLogAggregatorLib|Include/devicemanager/Library/OcLogAggregatorLib.h
 
   ##  @libraryclass
-  OcMainLib|Include/Acidanthera/Library/OcMainLib.h
+  OcMainLib|Include/devicemanager/Library/OcMainLib.h
 
   ##  @libraryclass
-  OcMachoLib|Include/Acidanthera/Library/OcMachoLib.h
+  OcMachoLib|Include/devicemanager/Library/OcMachoLib.h
 
   ##  @libraryclass
-  OcMemoryLib|Include/Acidanthera/Library/OcMemoryLib.h
+  OcMemoryLib|Include/devicemanager/Library/OcMemoryLib.h
 
   ##  @libraryclass
-  OcMp3Lib|Include/Acidanthera/Library/OcMp3Lib.h
+  OcMp3Lib|Include/devicemanager/Library/OcMp3Lib.h
 
   ##  @libraryclass
-  OcMiscLib|Include/Acidanthera/Library/OcMiscLib.h
+  OcMiscLib|Include/devicemanager/Library/OcMiscLib.h
 
   ##  @libraryclass
-  OcOSInfoLib|Include/Acidanthera/Library/OcOSInfoLib.h
+  OcOSInfoLib|Include/devicemanager/Library/OcOSInfoLib.h
 
   ##  @libraryclass
-  OcPeCoffExtLib|Include/Acidanthera/Library/OcPeCoffExtLib.h
+  OcPeCoffExtLib|Include/devicemanager/Library/OcPeCoffExtLib.h
 
   ##  @libraryclass
-  OcPngLib|Include/Acidanthera/Library/OcPngLib.h
+  OcPngLib|Include/devicemanager/Library/OcPngLib.h
 
   ##  @libraryclass
-  OcRngLib|Include/Acidanthera/Library/OcRngLib.h
+  OcRngLib|Include/devicemanager/Library/OcRngLib.h
 
   ##  @libraryclass
-  OcRtcLib|Include/Acidanthera/Library/OcRtcLib.h
+  OcRtcLib|Include/devicemanager/Library/OcRtcLib.h
 
   ##  @libraryclass
-  OcSerializeLib|Include/Acidanthera/Library/OcSerializeLib.h
+  OcSerializeLib|Include/devicemanager/Library/OcSerializeLib.h
 
   ##  @libraryclass
-  OcSmbiosLib|Include/Acidanthera/Library/OcSmbiosLib.h
+  OcSmbiosLib|Include/devicemanager/Library/OcSmbiosLib.h
 
   ##  @libraryclass
-  OcSmcLib|Include/Acidanthera/Library/OcSmcLib.h
+  OcSmcLib|Include/devicemanager/Library/OcSmcLib.h
 
   ##  @libraryclass
-  OcStorageLib|Include/Acidanthera/Library/OcStorageLib.h
+  OcStorageLib|Include/devicemanager/Library/OcStorageLib.h
 
   ##  @libraryclass
-  OcStringLib|Include/Acidanthera/Library/OcStringLib.h
+  OcStringLib|Include/devicemanager/Library/OcStringLib.h
 
   ##  @libraryclass
-  OcTemplateLib|Include/Acidanthera/Library/OcTemplateLib.h
+  OcTemplateLib|Include/devicemanager/Library/OcTemplateLib.h
 
   ##  @libraryclass
-  TimerLib|Include/Acidanthera/Library/OcTimerLib.h
+  TimerLib|Include/devicemanager/Library/OcTimerLib.h
 
   ##  @libraryclass
-  OcUnicodeCollationEngGenericLib|Include/Acidanthera/Library/OcUnicodeCollationEngGenericLib.h
+  OcUnicodeCollationEngGenericLib|Include/devicemanager/Library/OcUnicodeCollationEngGenericLib.h
 
   ##  @libraryclass
-  OcVirtualFsLib|Include/Acidanthera/Library/OcVirtualFsLib.h
+  OcVirtualFsLib|Include/devicemanager/Library/OcVirtualFsLib.h
 
   ##  @libraryclass
-  OcWaveLib|Include/Acidanthera/Library/OcWaveLib.h
+  OcWaveLib|Include/devicemanager/Library/OcWaveLib.h
 
   ##  @libraryclass
-  OcXmlLib|Include/Acidanthera/Library/OcXmlLib.h
+  OcXmlLib|Include/devicemanager/Library/OcXmlLib.h
 
   ##  @libraryclass
-  UefiBootServicesTableLib|Include/Acidanthera/Library/UefiBootServicesTableLib.h
+  UefiBootServicesTableLib|Include/devicemanager/Library/UefiBootServicesTableLib.h
 
   ##  @libraryclass
   AppleCpuExtensionsLib|Include/Apple/Library/AppleCpuExtensionsLib.h

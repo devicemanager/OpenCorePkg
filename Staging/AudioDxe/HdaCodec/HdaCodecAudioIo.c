@@ -674,7 +674,7 @@ HdaCodecAudioIoSetupPlayback (
       //
       // According to Intel HDA spec this can be from 0 to 7, however we
       // have seen 8 in the wild, and values up to 8 are perfectly usable.
-      // REF: https://github.com/acidanthera/bugtracker/issues/740#issuecomment-1005279476
+      // REF: https://github.com/devicemanager/bugtracker/issues/740#issuecomment-1005279476
       //
       if (NumGpios > 8) {
         Status = EFI_INVALID_PARAMETER;
@@ -734,7 +734,7 @@ HdaCodecAudioIoSetupPlayback (
 
   //
   // We are required to wait for some time after codec setup on some systems.
-  // REF: https://github.com/acidanthera/bugtracker/issues/971
+  // REF: https://github.com/devicemanager/bugtracker/issues/971
   //
   if (PlaybackDelay > 0) {
     gBS->Stall (MS_TO_MICROSECONDS (PlaybackDelay));

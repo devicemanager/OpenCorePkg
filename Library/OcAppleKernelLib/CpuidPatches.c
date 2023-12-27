@@ -938,7 +938,7 @@ PatchKernelCpuId (
   // To workaround this we make sure to always report OSXSAVE bit when it is available
   // regardless of the reevaluation performed by init_fpu in XNU.
   //
-  // REF: https://github.com/acidanthera/bugtracker/issues/1035
+  // REF: https://github.com/devicemanager/bugtracker/issues/1035
   //
   if (  FoundReleaseKernel
      && (CpuInfo->CpuidVerEcx.Bits.XSAVE != 0)

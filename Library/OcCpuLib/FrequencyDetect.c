@@ -658,7 +658,7 @@ InternalCalculateVMTFrequency (
 
   //
   // TODO: We do not have Hypervisor support in EDK II CPUID structure yet.
-  // See https://github.com/acidanthera/audk/pull/2.
+  // See https://github.com/devicemanager/audk/pull/2.
   // Get Hypervisor/Virtualization information.
   //
   if (CpuidVerEcx.Bits.ParaVirtualized == 0) {

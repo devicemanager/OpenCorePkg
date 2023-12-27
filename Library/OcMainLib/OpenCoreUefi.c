@@ -361,7 +361,7 @@ OcExitBootServicesHandler (
   // performing some timer(?) actions in parallel to ExitBootServices.
   // Some day we should figure out what exactly happens there.
   // It is not the first time I face this, check AptioInputFix timer code:
-  // https://github.com/acidanthera/AptioFixPkg/blob/e54c185/Platform/AptioInputFix/Timer/AIT.c#L72-L73
+  // https://github.com/devicemanager/AptioFixPkg/blob/e54c185/Platform/AptioInputFix/Timer/AIT.c#L72-L73
   // Roughly 5 seconds is good enough.
   //
   if (Config->Uefi.Quirks.ExitBootServicesDelay > 0) {

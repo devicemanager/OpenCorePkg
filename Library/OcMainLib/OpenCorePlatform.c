@@ -540,7 +540,7 @@ OcPlatformUpdateNvram (
     // of legacy Windows installation in boot selector preference pane.
     // We need it because Windows systems with EFI partition not being 1st
     // are recognised as legacy. See:
-    // https://github.com/acidanthera/bugtracker/issues/327
+    // https://github.com/devicemanager/bugtracker/issues/327
     // https://sourceforge.net/p/cloverefiboot/tickets/435
     //
     if (Config->PlatformInfo.Generic.AdviseFeatures) {

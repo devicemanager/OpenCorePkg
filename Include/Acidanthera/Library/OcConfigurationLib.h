@@ -412,14 +412,14 @@ OC_DECLARE (OC_MISC_TOOLS_ARRAY)
 
 ///
 /// Reference:
-/// https://github.com/acidanthera/bugtracker/issues/1954#issuecomment-1084220743
+/// https://github.com/devicemanager/bugtracker/issues/1954#issuecomment-1084220743
 ///
 #define OC_SERIAL_PCI_DEVICE_INFO_MAX_SIZE  41U
 
 ///
 /// Reference:
-/// https://github.com/acidanthera/audk/blob/master/MdeModulePkg/Library/BaseSerialPortLib16550/BaseSerialPortLib16550.inf
-/// https://github.com/acidanthera/audk/blob/master/MdeModulePkg/MdeModulePkg.dec
+/// https://github.com/devicemanager/audk/blob/master/MdeModulePkg/Library/BaseSerialPortLib16550/BaseSerialPortLib16550.inf
+/// https://github.com/devicemanager/audk/blob/master/MdeModulePkg/MdeModulePkg.dec
 ///
 #define OC_MISC_SERIAL_CUSTOM_FIELDS(_, __) \
   _(UINT32                      , BaudRate                 ,      , 115200                           , ()) \

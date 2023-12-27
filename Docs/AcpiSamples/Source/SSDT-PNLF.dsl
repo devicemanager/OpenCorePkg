@@ -36,7 +36,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "PNLF", 0)
             {
                 Name (_HID, EisaId("APP0002"))
                 Name (_CID, "backlight")
-                // _UID is set depending on PWMMax to match profiles in WhateverGreen.kext https://github.com/acidanthera/WhateverGreen/blob/1.4.7/WhateverGreen/kern_weg.cpp#L32
+                // _UID is set depending on PWMMax to match profiles in WhateverGreen.kext https://github.com/devicemanager/WhateverGreen/blob/1.4.7/WhateverGreen/kern_weg.cpp#L32
                 // 14: Sandy/Ivy 0x710
                 // 15: Haswell/Broadwell 0xad9
                 // 16: Skylake/KabyLake 0x56c (and some Haswell, example 0xa2e0008)

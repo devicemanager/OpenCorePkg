@@ -4,7 +4,7 @@
 # Copyright © 2022 Mike Beaton. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause
 #
-# Examine log at /var/log/org.acidanthera.nvramhook.launchd/launchd.log.
+# Examine log at /var/log/org.devicemanager.nvramhook.launchd/launchd.log.
 #
 # Script can run immediately or be installed as daemon or logout hook. Installs as
 # launch daemon on Yosemite and above, which is the only supported approach that on
@@ -16,7 +16,7 @@
 # immediately, for 'daemon' this waits to be terminated e.g. CTRL+C before saving.
 #
 # TO DO: rc.shutdown.d approach discussed in
-# https://github.com/acidanthera/bugtracker/issues/2106
+# https://github.com/devicemanager/bugtracker/issues/2106
 # might be a viable alternative (needs testing re timing of picking up NVRAM changes).
 #
 # Credits:
@@ -359,7 +359,7 @@ UNIQUE_DIR="${BOOT_NODE}"
 
 PRIVILEGED_HELPER_TOOLS="/Library/PrivilegedHelperTools"
 
-ORG="org.acidanthera.nvramhook"
+ORG="org.devicemanager.nvramhook"
 NVRAMDUMP="${PRIVILEGED_HELPER_TOOLS}/${ORG}.nvramdump.helper"
 
 DAEMON_PLIST="/Library/LaunchDaemons/${ORG}.daemon.plist"

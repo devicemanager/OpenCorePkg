@@ -1,7 +1,7 @@
 OpenDuetPkg
 ===========
 
-Acidanthera variant of DuetPkg. Specialties:
+devicemanager variant of DuetPkg. Specialties:
 
 - Significantly improved boot performance.
 - BDS is simplified to load `EFI/OC/OpenCore.efi`.
@@ -46,7 +46,7 @@ Acidanthera variant of DuetPkg. Specialties:
 
 ## Compilation
 
-By default [ocbuild](https://github.com/acidanthera/ocbuild)-like compilation is used via `macbuild.tool`.
+By default [ocbuild](https://github.com/devicemanager/ocbuild)-like compilation is used via `macbuild.tool`.
 As an alternative it is possible to perform in-tree compilation by using `INTREE=1` environment variable:
 
 ```

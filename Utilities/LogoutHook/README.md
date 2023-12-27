@@ -14,4 +14,4 @@
 Shows non-empty daemon pid only, if installed with default settings.
 
 ### Log
-```/var/log/org.acidanthera.nvramhook.launchd/launchd.log```
+```/var/log/org.devicemanager.nvramhook.launchd/launchd.log```

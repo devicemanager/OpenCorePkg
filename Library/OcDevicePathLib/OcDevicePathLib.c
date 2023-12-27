@@ -462,7 +462,7 @@ OcFixAppleBootDevicePathNode (
         // a new, valid DevicePath that matches in prefix and suffix to the
         // given one but ignore the data of the node that matches the malformed
         // one.
-        // REF: https://github.com/acidanthera/bugtracker/issues/991#issue-643248184
+        // REF: https://github.com/devicemanager/bugtracker/issues/991#issue-643248184
         //
         OldPath = *DevicePath;
         Result  = InternalExpandNewPath (
@@ -534,11 +534,11 @@ OcFixAppleBootDevicePathNode (
           // In some types of firmware, UIDs for PciRoot do not match between ACPI tables and UEFI
           // UEFI Device Paths. The former contain 0x00, 0x40, 0x80, 0xC0 values, while
           // the latter have ascending numbers.
-          // Reference: https://github.com/acidanthera/bugtracker/issues/664.
+          // Reference: https://github.com/devicemanager/bugtracker/issues/664.
           // On other boards it is be even more erratic, refer to:
-          // https://github.com/acidanthera/bugtracker/issues/664#issuecomment-647526506
+          // https://github.com/devicemanager/bugtracker/issues/664#issuecomment-647526506
           // On older boards there also is a PCI0/_UID1 issue, refer to:
-          // https://github.com/acidanthera/bugtracker/issues/664#issuecomment-663873846
+          // https://github.com/devicemanager/bugtracker/issues/664#issuecomment-663873846
           //
           switch (Node.Acpi->UID) {
             case 0x1:

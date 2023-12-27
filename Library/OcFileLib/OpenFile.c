@@ -60,7 +60,7 @@ OcSafeFileOpen (
   // drivers that report write protection violation errors for read-only
   // operations but otherwise function as expected.
   //
-  // REF: https://github.com/acidanthera/bugtracker/issues/1242
+  // REF: https://github.com/devicemanager/bugtracker/issues/1242
   //
   if (  (Status == EFI_WRITE_PROTECTED)
      && (OpenMode == EFI_FILE_MODE_READ)

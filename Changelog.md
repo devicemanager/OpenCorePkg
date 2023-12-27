@@ -115,7 +115,7 @@ OpenCore Changelog
 - Updated ocvalidate to allow duplicate tool if FullNvramAccess is different
 - Fixed `Kernel` -> `Block` entries not being processed if one was skipped due to `Arch`
 - Fixed intermittent prelinking failures caused by XML corruption when kext blocking is enabled
-- Removed magic Acidanthera sequence from OpenCore files used for picker hiding
+- Removed magic devicemanager sequence from OpenCore files used for picker hiding
 - Added `.contentVisibility` to hide and disable boot entries
 - Added Linux support to QemuBuild.command used for Duet debugging
 - Built in new secure PE/COFF loader
@@ -357,7 +357,7 @@ OpenCore Changelog
 - Added support for display rotation in direct GOP renderer
 - Fixed handling multinode device paths in LoadedImage and elsewhere
 - Changed OpenCanopy image directory to support directory prefixes
-- Changed OpenCanopy preferred image set to `Acidanthera\GoldenGate`
+- Changed OpenCanopy preferred image set to `devicemanager\GoldenGate`
 - Removed `<BOOTPATH>.icns` and `<TOOLPATH>.icns` support
 - Added content flavour system allowing custom boot entry icons compatible across icon packs
 - Added automatic flavour detection for macOS boot entries
@@ -845,7 +845,7 @@ OpenCore Changelog
 - Allowed writing to non-volatile variables with disabled write
 - Fixed microcode reading on Intel CPUs
 - Fixed SMBIOS Type4 External Clock values
-- Improved Windows compatibility on some setups (acidanthera/bugtracker#614)
+- Improved Windows compatibility on some setups (devicemanager/bugtracker#614)
 - Added `SupportsCsm` and option in `PlatformInfo/Generic`
 - Added `OSInfo` protocol support
 - Added `SignalAppleOS` `Booter` quirk to enable IGPU on Macs in other OS

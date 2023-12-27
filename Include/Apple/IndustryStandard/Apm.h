@@ -1,7 +1,7 @@
 /** @file
   APM partitioning scheme.
 
-Copyright (c) 2016-2021, Acidanthera. All rights reserved.<BR>
+Copyright (c) 2016-2021, devicemanager. All rights reserved.<BR>
 SPDX-License-Identifier: BSD-2-Clause-Patent
 
 **/

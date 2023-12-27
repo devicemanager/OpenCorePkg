@@ -112,7 +112,7 @@ AIKPollKeyboardHandler (
 
   //
   // Timer handlers may not always be serialised as discovered in Toshiba Portege z30a.
-  // REF: https://github.com/acidanthera/bugtracker/issues/1340
+  // REF: https://github.com/devicemanager/bugtracker/issues/1340
   //
   if (Keycode->InPollKeyboardEvent) {
     return;

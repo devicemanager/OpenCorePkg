@@ -623,7 +623,7 @@ ValidateBaudRate (
 
   //
   // Reference:
-  // https://github.com/acidanthera/audk/blob/bb1bba3d776733c41dbfa2d1dc0fe234819a79f2/MdeModulePkg/MdeModulePkg.dec#L1223
+  // https://github.com/devicemanager/audk/blob/bb1bba3d776733c41dbfa2d1dc0fe234819a79f2/MdeModulePkg/MdeModulePkg.dec#L1223
   //
   STATIC CONST UINT32  AllowedBaudRate[] = {
     921600U, 460800U, 230400U, 115200U,
@@ -668,7 +668,7 @@ CheckMiscSerial (
 
   //
   // Reference:
-  // https://github.com/acidanthera/audk/blob/bb1bba3d776733c41dbfa2d1dc0fe234819a79f2/MdeModulePkg/MdeModulePkg.dec#L1199-L1200
+  // https://github.com/devicemanager/audk/blob/bb1bba3d776733c41dbfa2d1dc0fe234819a79f2/MdeModulePkg/MdeModulePkg.dec#L1199-L1200
   //
   RegisterAccessWidth = Config->Misc.Serial.Custom.RegisterAccessWidth;
   if ((RegisterAccessWidth != 8U) && (RegisterAccessWidth != 32U)) {
@@ -683,7 +683,7 @@ CheckMiscSerial (
 
   //
   // Reference:
-  // https://github.com/acidanthera/audk/blob/bb1bba3d776733c41dbfa2d1dc0fe234819a79f2/MdeModulePkg/MdeModulePkg.dec#L1393
+  // https://github.com/devicemanager/audk/blob/bb1bba3d776733c41dbfa2d1dc0fe234819a79f2/MdeModulePkg/MdeModulePkg.dec#L1393
   //
   PciDeviceInfo     = OC_BLOB_GET (&Config->Misc.Serial.Custom.PciDeviceInfo);
   PciDeviceInfoSize = Config->Misc.Serial.Custom.PciDeviceInfo.Size;

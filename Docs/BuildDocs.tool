@@ -90,7 +90,7 @@ checkdocs() {
 }
 
 checkver() {
-  ocver=$(grep OPEN_CORE_VERSION ../Include/Acidanthera/Library/OcMainLib.h | sed 's/.*"\(.*\)".*/\1/' | grep -E '^[0-9.]+$')
+  ocver=$(grep OPEN_CORE_VERSION ../Include/devicemanager/Library/OcMainLib.h | sed 's/.*"\(.*\)".*/\1/' | grep -E '^[0-9.]+$')
   if [ "$ocver" = "" ]; then
     abort "Invalid OpenCore version"
   fi

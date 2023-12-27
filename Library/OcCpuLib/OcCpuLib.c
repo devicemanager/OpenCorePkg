@@ -448,7 +448,7 @@ ScanIntelProcessor (
 
   //
   // Some virtual machines like QEMU 5.0 with KVM will fail to read this value.
-  // REF: https://github.com/acidanthera/bugtracker/issues/914
+  // REF: https://github.com/devicemanager/bugtracker/issues/914
   //
   if ((Cpu->CpuGeneration >= OcCpuGenerationSandyBridge) && !Cpu->Hypervisor) {
     PkgCstConfigControl.Uint64 = AsmReadMsr64 (MSR_SANDY_BRIDGE_PKG_CST_CONFIG_CONTROL);
@@ -605,7 +605,7 @@ ScanIntelProcessor (
   {
     //
     // Legacy Pentium 4, e.g. 541.
-    // REF: https://github.com/acidanthera/bugtracker/issues/1783
+    // REF: https://github.com/devicemanager/bugtracker/issues/1783
     //
     Cpu->CoreCount = 1;
   } else {
@@ -943,7 +943,7 @@ OcCpuScanProcessor (
   // Magic 4 value comes from 4 links in pretty much every modern Intel CPU.
   // On modern CPUs this is now named Base clock (BCLK).
   // Note, that this value was incorrect for most Macs since iMac12,x till iMac18,x inclusive.
-  // REF: https://github.com/acidanthera/bugtracker/issues/622#issuecomment-570811185
+  // REF: https://github.com/devicemanager/bugtracker/issues/622#issuecomment-570811185
   //
   Cpu->ExternalClock = (UINT16)DivU64x32 (Cpu->FSBFrequency, 1000000);
   //

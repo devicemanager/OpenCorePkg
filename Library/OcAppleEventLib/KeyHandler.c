@@ -614,7 +614,7 @@ InternalAppleEventDataFromCurrentKeyStroke (
       // this code will run and (not entirely consistently across different
       // firmware) may prevent keystrokes from reaching ConIn-based UEFI GUI
       // apps such as Windows BitLocker.
-      // REF: https://github.com/acidanthera/bugtracker/issues/1716
+      // REF: https://github.com/devicemanager/bugtracker/issues/1716
       //
       Mode   = EfiConsoleControlScreenGraphics;
       Status = gBS->LocateProtocol (

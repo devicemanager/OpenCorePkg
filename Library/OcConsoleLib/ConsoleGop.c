@@ -292,7 +292,7 @@ RotateMode (
     // forces it inspect the AppleFramebufferInfo protocol.
     // It also requires PixelFormat to be <= PixelBitMask, otherwise Apple
     // logo will not show.
-    // REF: https://github.com/acidanthera/bugtracker/issues/1498#issuecomment-782822654
+    // REF: https://github.com/devicemanager/bugtracker/issues/1498#issuecomment-782822654
     //
     // Windows and Linux bootloaders only draw directly to the framebuffer.
     //

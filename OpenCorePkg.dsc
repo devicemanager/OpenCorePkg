@@ -50,7 +50,7 @@
   # across the timers. This results in exceptions when trying to execute
   # primitives like CopyMem in timers (e.g. AIKDataWriteEntry).
   # Reproduced on ASUS M5A97 with AMD FX8320 CPU.
-  # REF: https://github.com/acidanthera/bugtracker/issues/754
+  # REF: https://github.com/devicemanager/bugtracker/issues/754
   BaseMemoryLib|MdePkg/Library/BaseMemoryLibRepStr/BaseMemoryLibRepStr.inf
   BaseOverflowLib|MdePkg/Library/BaseOverflowLib/BaseOverflowLib.inf
   BaseRngLib|MdePkg/Library/BaseRngLib/BaseRngLib.inf

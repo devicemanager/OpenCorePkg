@@ -81,8 +81,8 @@ extern OC_CONSOLE_FONT  gDefaultConsoleFont;
 /**
   List of non-page 0 chars required by EFI.
   Refs:
-    https://github.com/acidanthera/audk/blob/master/MdePkg/Include/Protocol/SimpleTextOut.h#L177-L178
-    https://github.com/acidanthera/audk/blob/master/MdePkg/Include/Protocol/SimpleTextOut.h#L34-L98
+    https://github.com/devicemanager/audk/blob/master/MdePkg/Include/Protocol/SimpleTextOut.h#L177-L178
+    https://github.com/devicemanager/audk/blob/master/MdePkg/Include/Protocol/SimpleTextOut.h#L34-L98
 **/
 extern OC_CONSOLE_FONT_RANGE  gEfiRequiredUnicodeChars[];
 

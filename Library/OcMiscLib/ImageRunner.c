@@ -68,8 +68,8 @@ OcLoadAndRunImage (
       ));
     //
     // Some fragile firmware fail to properly set LoadedImage when buffer is provided.
-    // REF: https://github.com/acidanthera/bugtracker/issues/712
-    // REF: https://github.com/acidanthera/bugtracker/issues/1502
+    // REF: https://github.com/devicemanager/bugtracker/issues/712
+    // REF: https://github.com/devicemanager/bugtracker/issues/1502
     //
     if ((DevicePath != NULL) && (LoadedImage->DeviceHandle == NULL)) {
       Status = gBS->LocateDevicePath (

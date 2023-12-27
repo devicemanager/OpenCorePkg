@@ -1529,7 +1529,7 @@ AcpiFadtEnableReset (
   // Reset Register area. We will reallocate in this case.
   // Interestingly EFI_ACPI_6_2_RESET_REG_SUP may be set.
   //
-  // REF: https://github.com/acidanthera/bugtracker/issues/897
+  // REF: https://github.com/devicemanager/bugtracker/issues/897
   //
 
   if ((OldSize < RequiredSize) || !AcpiIsTableWritable ((EFI_ACPI_COMMON_HEADER *)Context->Fadt)) {

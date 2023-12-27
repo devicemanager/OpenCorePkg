@@ -1904,7 +1904,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = acidanthera;
+				ORGANIZATIONNAME = devicemanager;
 				TargetAttributes = {
 					354F73EE22573DE700AB1A9B = {
 						CreatedOnToolsVersion = 10.2;
@@ -2267,7 +2267,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/UDK/MdePkg/Include/X64",
 					"$(SRCROOT)/UDK/MdeModulePkg/Include",
-					"$(SRCROOT)/UDK/OpenCorePkg/Include/Acidanthera",
+					"$(SRCROOT)/UDK/OpenCorePkg/Include/devicemanager",
 					"$(SRCROOT)/UDK/OpenCorePkg/Include/Apple/X64",
 					"$(SRCROOT)/UDK/OpenCorePkg/Include/Apple",
 					"$(SRCROOT)/UDK/OpenCorePkg/Include/Generic",
@@ -2319,7 +2319,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/UDK/MdePkg/Include/X64",
 					"$(SRCROOT)/UDK/MdeModulePkg/Include",
-					"$(SRCROOT)/UDK/OpenCorePkg/Include/Acidanthera",
+					"$(SRCROOT)/UDK/OpenCorePkg/Include/devicemanager",
 					"$(SRCROOT)/UDK/OpenCorePkg/Include/Apple/X64",
 					"$(SRCROOT)/UDK/OpenCorePkg/Include/Apple",
 					"$(SRCROOT)/UDK/OpenCorePkg/Include/Generic",

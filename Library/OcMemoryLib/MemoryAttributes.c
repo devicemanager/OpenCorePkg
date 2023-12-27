@@ -461,7 +461,7 @@ OcRebuildAttributes (
   //
   // Some boards create entry duplicates and lose all non-PE entries
   // after loading runtime drivers after EndOfDxe.
-  // REF: https://github.com/acidanthera/bugtracker/issues/491#issuecomment-609014334
+  // REF: https://github.com/devicemanager/bugtracker/issues/491#issuecomment-609014334
   //
   MaxDescriptors = MemoryAttributesTable->NumberOfEntries;
   Status         = OcDeduplicateDescriptors (
@@ -520,7 +520,7 @@ OcRebuildAttributes (
   // Since the memory used to allocate runtime driver resides in BINs, MAT has whatever
   // permissions designated for unused memory. Mark unused memory containing our driver
   // as executable here.
-  // REF: https://github.com/acidanthera/bugtracker/issues/491#issuecomment-606835337
+  // REF: https://github.com/devicemanager/bugtracker/issues/491#issuecomment-606835337
   //
   if (Address != 0) {
     Status = OcUpdateDescriptors (

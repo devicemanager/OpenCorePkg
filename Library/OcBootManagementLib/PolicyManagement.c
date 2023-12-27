@@ -65,7 +65,7 @@ OcGetDevicePolicyType (
 
   //
   // FIXME: This code does not take care of RamDisk exception as specified per
-  // https://github.com/acidanthera/bugtracker/issues/335.
+  // https://github.com/devicemanager/bugtracker/issues/335.
   // Currently we do not need it, but in future we may.
   //
 

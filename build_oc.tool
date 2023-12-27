@@ -104,7 +104,7 @@ package() {
   fi
 
   local ver
-  ver=$(grep OPEN_CORE_VERSION ./Include/Acidanthera/Library/OcMainLib.h | sed 's/.*"\(.*\)".*/\1/' | grep -E '^[0-9.]+$')
+  ver=$(grep OPEN_CORE_VERSION ./Include/devicemanager/Library/OcMainLib.h | sed 's/.*"\(.*\)".*/\1/' | grep -E '^[0-9.]+$')
   if [ "$ver" = "" ]; then
     echo "Invalid version $ver"
     ver="UNKNOWN"
@@ -383,7 +383,7 @@ export SELFPKG
 export NO_ARCHIVES
 export DISCARD_SUBMODULES
 
-src=$(curl -LfsS https://raw.githubusercontent.com/acidanthera/ocbuild/master/efibuild.sh) && eval "$src" || exit 1
+src=$(curl -LfsS https://raw.githubusercontent.com/devicemanager/ocbuild/master/efibuild.sh) && eval "$src" || exit 1
 
 cd Utilities/ocvalidate || exit 1
 ocv_tool=""

@@ -324,7 +324,7 @@ InternalDetectAppleProcessorType (
 
       if (CoreCount > 4) {
         // This can possibly be some engineering sample of a Xeon CPU.
-        // REF: https://github.com/acidanthera/bugtracker/issues/1149
+        // REF: https://github.com/devicemanager/bugtracker/issues/1149
         return AppleProcessorTypeXeonE5;
       }
 
@@ -747,7 +747,7 @@ OcCpuFrequencyToDisplayFrequency (
   MhzRemainder = MhzSpeed % 100;
   //
   // Round to two digits when the second digit is above zero or to one otherwise.
-  // REF: https://github.com/acidanthera/bugtracker/issues/1521
+  // REF: https://github.com/devicemanager/bugtracker/issues/1521
   //
   if ((MhzRemainder >= 60) && (MhzRemainder < 89)) {
     MhzSpeed = (MhzSpeed) / 10 * 10;
